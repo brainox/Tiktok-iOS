@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Tiktok
 //
 //  Created by Obinna on 13/02/2024.
