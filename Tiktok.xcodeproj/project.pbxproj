@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1043F42ED425F900BAF261 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043F32ED425F900BAF261 /* FirebaseAnalytics */; };
+		9B1043F62ED425F900BAF261 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043F52ED425F900BAF261 /* FirebaseAuth */; };
+		9B1043F82ED425F900BAF261 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043F72ED425F900BAF261 /* FirebaseCore */; };
+		9B1043FA2ED425F900BAF261 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043F92ED425F900BAF261 /* FirebaseCrashlytics */; };
+		9B1043FC2ED425F900BAF261 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043FB2ED425F900BAF261 /* FirebaseDatabase */; };
+		9B1043FE2ED425F900BAF261 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043FD2ED425F900BAF261 /* FirebaseStorage */; };
+		9B1044022ED4BEDD00BAF261 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B1044012ED4BEDD00BAF261 /* GoogleService-Info.plist */; };
 		9B93F09D2B7BEB320040CD09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93F09C2B7BEB320040CD09 /* AppDelegate.swift */; };
 		9B93F09F2B7BEB320040CD09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93F09E2B7BEB320040CD09 /* SceneDelegate.swift */; };
 		9B93F0A12B7BEB320040CD09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93F0A02B7BEB320040CD09 /* HomeViewController.swift */; };
@@ -30,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1044012ED4BEDD00BAF261 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B93F0992B7BEB320040CD09 /* Tiktok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiktok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B93F09C2B7BEB320040CD09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B93F09E2B7BEB320040CD09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1043FC2ED425F900BAF261 /* FirebaseDatabase in Frameworks */,
+				9B1043F42ED425F900BAF261 /* FirebaseAnalytics in Frameworks */,
+				9B1043FA2ED425F900BAF261 /* FirebaseCrashlytics in Frameworks */,
+				9B1043F82ED425F900BAF261 /* FirebaseCore in Frameworks */,
+				9B1043F62ED425F900BAF261 /* FirebaseAuth in Frameworks */,
+				9B1043FE2ED425F900BAF261 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9B93F0A52B7BEB330040CD09 /* Assets.xcassets */,
+				9B1044012ED4BEDD00BAF261 /* GoogleService-Info.plist */,
 				9B93F09C2B7BEB320040CD09 /* AppDelegate.swift */,
 				9B93F09E2B7BEB320040CD09 /* SceneDelegate.swift */,
 			);
@@ -205,6 +220,14 @@
 			dependencies = (
 			);
 			name = Tiktok;
+			packageProductDependencies = (
+				9B1043F32ED425F900BAF261 /* FirebaseAnalytics */,
+				9B1043F52ED425F900BAF261 /* FirebaseAuth */,
+				9B1043F72ED425F900BAF261 /* FirebaseCore */,
+				9B1043F92ED425F900BAF261 /* FirebaseCrashlytics */,
+				9B1043FB2ED425F900BAF261 /* FirebaseDatabase */,
+				9B1043FD2ED425F900BAF261 /* FirebaseStorage */,
+			);
 			productName = Tiktok;
 			productReference = 9B93F0992B7BEB320040CD09 /* Tiktok.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 9B93F0902B7BEB320040CD09;
+			packageReferences = (
+				9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9B93F09A2B7BEB320040CD09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,6 +275,7 @@
 			files = (
 				9B93F0A92B7BEB330040CD09 /* LaunchScreen.storyboard in Resources */,
 				9B93F0A62B7BEB330040CD09 /* Assets.xcassets in Resources */,
+				9B1044022ED4BEDD00BAF261 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macmartins.Tiktok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -461,6 +489,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macmartins.Tiktok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -491,6 +520,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B1043F32ED425F900BAF261 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9B1043F52ED425F900BAF261 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9B1043F72ED425F900BAF261 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		9B1043F92ED425F900BAF261 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		9B1043FB2ED425F900BAF261 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9B1043FD2ED425F900BAF261 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B93F0912B7BEB320040CD09 /* Project object */;
 }
