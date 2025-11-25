@@ -88,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9B93F09B2B7BEB320040CD09 /* Tiktok */,
+				9B1044082ED57A5400BAF261 /* README.md */,
 				9B93F09A2B7BEB320040CD09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,7 +111,6 @@
 				9B93F0B12B7C23230040CD09 /* Controllers */,
 				9B93F0B02B7C23170040CD09 /* Resources */,
 				9B93F0AA2B7BEB330040CD09 /* Info.plist */,
-				9B1044082ED57A5400BAF261 /* README.md */,
 			);
 			path = Tiktok;
 			sourceTree = "<group>";
