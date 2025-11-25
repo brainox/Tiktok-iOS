@@ -14,6 +14,8 @@
 		9B1043FC2ED425F900BAF261 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043FB2ED425F900BAF261 /* FirebaseDatabase */; };
 		9B1043FE2ED425F900BAF261 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1043FD2ED425F900BAF261 /* FirebaseStorage */; };
 		9B1044022ED4BEDD00BAF261 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B1044012ED4BEDD00BAF261 /* GoogleService-Info.plist */; };
+		9B1044052ED579D300BAF261 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1044042ED579D300BAF261 /* SDWebImage */; };
+		9B1044072ED579D300BAF261 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1044062ED579D300BAF261 /* SDWebImageMapKit */; };
 		9B93F09D2B7BEB320040CD09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93F09C2B7BEB320040CD09 /* AppDelegate.swift */; };
 		9B93F09F2B7BEB320040CD09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93F09E2B7BEB320040CD09 /* SceneDelegate.swift */; };
 		9B93F0A12B7BEB320040CD09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93F0A02B7BEB320040CD09 /* HomeViewController.swift */; };
@@ -70,8 +72,10 @@
 				9B1043FC2ED425F900BAF261 /* FirebaseDatabase in Frameworks */,
 				9B1043F42ED425F900BAF261 /* FirebaseAnalytics in Frameworks */,
 				9B1043FA2ED425F900BAF261 /* FirebaseCrashlytics in Frameworks */,
+				9B1044052ED579D300BAF261 /* SDWebImage in Frameworks */,
 				9B1043F82ED425F900BAF261 /* FirebaseCore in Frameworks */,
 				9B1043F62ED425F900BAF261 /* FirebaseAuth in Frameworks */,
+				9B1044072ED579D300BAF261 /* SDWebImageMapKit in Frameworks */,
 				9B1043FE2ED425F900BAF261 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +231,8 @@
 				9B1043F92ED425F900BAF261 /* FirebaseCrashlytics */,
 				9B1043FB2ED425F900BAF261 /* FirebaseDatabase */,
 				9B1043FD2ED425F900BAF261 /* FirebaseStorage */,
+				9B1044042ED579D300BAF261 /* SDWebImage */,
+				9B1044062ED579D300BAF261 /* SDWebImageMapKit */,
 			);
 			productName = Tiktok;
 			productReference = 9B93F0992B7BEB320040CD09 /* Tiktok.app */;
@@ -258,6 +264,7 @@
 			mainGroup = 9B93F0902B7BEB320040CD09;
 			packageReferences = (
 				9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9B1044032ED579D300BAF261 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 9B93F09A2B7BEB320040CD09 /* Products */;
 			projectDirPath = "";
@@ -530,6 +537,14 @@
 				minimumVersion = 12.6.0;
 			};
 		};
+		9B1044032ED579D300BAF261 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -562,6 +577,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B1043F22ED425F900BAF261 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		9B1044042ED579D300BAF261 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1044032ED579D300BAF261 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		9B1044062ED579D300BAF261 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1044032ED579D300BAF261 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
